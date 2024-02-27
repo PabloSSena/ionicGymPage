@@ -1,0 +1,7 @@
+{
+  "name": "usina",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
