@@ -31,7 +31,6 @@
         </ion-button>
         <div class="badge-circle" *ngIf="!isNotifficationsOpen"></div>
         <ion-modal [isOpen]="isModalOpen">
-
           <ng-template>
             <ion-header>
               <ion-toolbar color="header">
@@ -42,11 +41,16 @@
               </ion-toolbar>
             </ion-header>
             <ion-content class="ion-padding">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni illum quidem recusandae ducimus quos
-                reprehenderit. Veniam, molestias quos, dolorum consequuntur nisi deserunt omnis id illo sit cum qui. Eaque,
-                dicta.
-              </p>
+
+              <ion-card *ngFor="let item of notifications">
+                <ion-card-header>
+                  <ion-card-title>{{item.title}}</ion-card-title>
+                </ion-card-header>
+              
+                <ion-card-content>
+                  {{item.text}}
+                </ion-card-content>
+              </ion-card>
             </ion-content>
           </ng-template>
         </ion-modal>
@@ -57,10 +61,8 @@
 </ion-header>
 
 <ion-content [fullscreen]="true" id="main-content">
-
-
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <div class="bottom-rounded"></div>
+
   </div>
 </ion-content>

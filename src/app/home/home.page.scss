@@ -4,7 +4,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  top: 50%;
+  top: 0;
   transform: translateY(-50%);
 }
 
@@ -85,4 +85,14 @@
 .items ion-icon{
   padding-left: 20px;
   margin-bottom: 10px;
+}
+
+.bottom-rounded {
+  width: 100%; /* Ajuste a largura conforme necessário */
+  height: 100px; /* Ajuste a altura conforme necessário */
+  background-color: #202020; /* Cor de fundo da div */
+  border-top-left-radius: 0; /* Não arredonda o canto superior esquerdo */
+  border-top-right-radius: 0; /* Não arredonda o canto superior direito */
+  border-bottom-left-radius: 45px; /* Arredonda o canto inferior esquerdo */
+  border-bottom-right-radius: 45px; /* Arredonda o canto inferior direito */
 }

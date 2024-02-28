@@ -6,6 +6,23 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+
+  notifications = [
+    {
+      title:"PROMOÇÃO",
+      text:"O gerente ficou maluco, faça o plano anual e ganhe dois meses de graça."
+    },
+    {
+      title:"REFORMA",
+      text:"Nesta sexta-feira a academia irá estar fechada para reforma."
+    },
+    {
+      title:"NOVO ESTOQUE",
+      text:"Chegaram novas camisetas na academia, venha conferir!!!"
+    }
+
+  ]
+
   menuOptions = [
     {
       icon:"barbell-outline",
