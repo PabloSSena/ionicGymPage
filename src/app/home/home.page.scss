@@ -25,3 +25,64 @@
 #container a {
   text-decoration: none;
 }
+
+.custom-header{
+  background-color: rgb(32, 32, 32);
+}
+
+.align {
+  padding: 10px;
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+  height: 80px; /* Defina a altura desejada */
+
+}
+.image {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.image ion-img {
+  max-width: 80px; 
+  max-height: 80px; 
+}
+
+.place-button {
+  display: flex; 
+  justify-content: end; 
+  align-items: end; 
+}
+
+
+.round-button {
+  overflow: visible;
+  --border-radius: 50%; 
+  width: 45px; 
+  height: 45px; 
+  --background: rgb(4, 4, 4); 
+  --color: rgb(240, 125, 7); 
+}
+
+.badge-circle {
+  position: absolute;
+  top: 18px;
+  right: 10px;
+  width: 16px; /* Ajuste o tamanho do círculo conforme necessário */
+  height: 16px; /* Ajuste o tamanho do círculo conforme necessário */
+  border-radius: 50%; /* Torna o elemento um círculo */
+  background-color: rgb(125, 240, 211); /* Cor de fundo do círculo */
+}
+
+.items{
+  margin: 0px;
+}
+.items ion-icon{
+  margin-right: 20px;
+  color:#86979f
+}
+.items ion-icon{
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
