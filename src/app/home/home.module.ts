@@ -5,7 +5,9 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
-import { SharedModule } from '../shared/shared.module';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { SwipperComponent } from '../shared/components/swipper/swipper.component';
+import { AppHeaderComponent } from '../shared/components/app-header/app-header.component';
 
 
 @NgModule({
@@ -14,8 +16,10 @@ import { SharedModule } from '../shared/shared.module';
     FormsModule,
     IonicModule,
     HomePageRoutingModule,
-    SharedModule
+    SwipperComponent,
+    AppHeaderComponent
   ],
-  declarations: [HomePage]
+  declarations: [HomePage],
+  schemas:[CUSTOM_ELEMENTS_SCHEMA],
 })
 export class HomePageModule {}
