@@ -1,8 +1,45 @@
 <app-header/>
 
-<ion-content [fullscreen]="true" id="main-content">
+<ion-content [fullscreen]="true" id="main-content" color="body">
+  <div class="bottom-rounded">
+    <ion-item color="header" lines="none">
+      <ion-avatar>
+        <img alt="person" src="../../assets/PabloSena.png" />
+      </ion-avatar>
+      <ion-label style="margin-left: 5px;">
+        <h2>
+          Pablo Sena
+        </h2>
+        <h5 style="color:purple">Nível roxo</h5>
+      </ion-label>
+    </ion-item>
+    <div class="centralizer">
+      <div class="buttons-holder">
+        <div class="is-holder">
+          <ion-icon name="accessibility-sharp"></ion-icon>
+          <strong href="#" class="button">MEU CORPO</strong>
+        </div>
+        <div class="is-holder">
+          <ion-icon name="medal-sharp"></ion-icon>
+          <strong href="#" class="button">OBJETIVOS E CONQUISTA</strong>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
   <div id="container">
-    <div class="bottom-rounded"></div>
+    <div style="display: flex; align-items: center;">
+      <strong>PERSONAL ONLINE</strong>
+      <ion-buttons >
+        <ion-button style="font-size: 8px;padding: 2px 4px;" slot="icon-only"fill="outline" >  
+          <ion-icon name="add" ></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </div>
+
+
+
 
   </div>
 </ion-content>
