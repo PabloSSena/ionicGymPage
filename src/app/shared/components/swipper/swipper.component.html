@@ -1,7 +1,69 @@
-<div>
-  <swiper-container >
-    <swiper-slide>Slide 1</swiper-slide>
-    <swiper-slide>Slide 2</swiper-slide>
-    <swiper-slide>Slide 3</swiper-slide>
-  </swiper-container>
+<div id="container">
+  <div style="display: flex; align-items: center;">
+    <strong>PERSONAL ONLINE</strong>
+    <ion-buttons >
+      <ion-button style="font-size: 8px;padding: 2px 4px;" slot="icon-only"fill="outline" >  
+        <ion-icon name="add" ></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </div>
+  <div class="swipper">
+    <swiper-container [slidesPerView]="1.3">
+      <swiper-slide>
+        <img style="filter: brightness(15%)" src="../../../../assets/fotoAcademia1.jpg"/>
+        <div class="textImg">
+          <div class="iconAndText">
+            <ion-icon style="color: aliceblue;" name="add-circle-outline" size="large"></ion-icon>
+            <h4>NOVO<br>TREINO</h4>
+          </div>
+        </div>
+      </swiper-slide>
+  
+      <swiper-slide>
+        <img src="../../../../assets/fotoAcademia2.jpg"/>
+        <div class="textImg2">
+          <h4>YOGA EXPRESS</h4>
+        </div>
+      </swiper-slide>
+    </swiper-container>
+  
+    <div style="display: flex; align-items: center;">
+      <strong style="margin-top: 35px; margin-bottom: 10px;">PROGRAMAS</strong>
+      <ion-badge style="background-color: #ec7b07;">novo</ion-badge>
+
+    </div>
+    <swiper-container [slidesPerView]="1.3">
+      <swiper-slide>
+        <img src="../../../../assets/fotoAcademia1.jpg"/>
+        <div class="spanStyler">
+          <span>Continuar treinando</span>
+        </div>
+        <div style="position: absolute;top: 65%; left: 10px;">
+          <h6>LEVANTAMENTO DE PESO</h6>
+        </div>
+      </swiper-slide>
+  
+      <swiper-slide>
+        <img src="../../../../assets/fotoAcademia2.jpg"/>
+        <div class="textImg2">
+          <h4>YOGA EXPRESS</h4>
+        </div>
+      </swiper-slide>
+    </swiper-container>
+    
+    <div class="disabled">
+      <div style="display: flex; align-items: center;">
+        <strong style="margin-top: 35px; margin-bottom: 10px;">CONTEÚDOS</strong>
+      </div>
+      <swiper-container [slidesPerView]="1.3" [spaceBetween]="20">
+        <swiper-slide>
+          <div class="quadradoLaranja"></div>
+        </swiper-slide>
+    
+        <swiper-slide>
+          <div class="quadradoLaranja"></div>
+        </swiper-slide>
+      </swiper-container>
+    </div>
+  </div>
 </div>

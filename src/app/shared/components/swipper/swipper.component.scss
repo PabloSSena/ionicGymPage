@@ -1,0 +1,118 @@
+#container {
+    text-align: left;
+    background-color: #090909;
+}
+  
+#container strong {
+    font-size: 18px;
+}
+  
+#container p {
+    font-size: 16px;
+    line-height: 22px;
+    color: #8c8c8c;
+    margin: 0;
+}
+  
+#container a {
+    text-decoration: none;
+}
+
+#container ion-button{
+    --border-radius: 50%;
+    --border-color: #76430f;
+}
+.swipper{
+    margin-top: 8px;
+    height: 10vh;
+}
+#container ion-icon{
+    color:#76430f
+}
+.swipper swiper-slide{
+    height: 15vh;
+}
+
+.swipper img{
+    width: 95%;
+    height: 15vh;
+    border-radius: 15px;
+    filter: brightness(50%); 
+}
+
+.textImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 25%;
+}
+
+.iconAndText{
+    display: flex;
+    align-items: center;
+}
+
+.textImg2{
+    position: absolute;
+    left: 5%;
+    top:65%
+}
+
+h4{
+    font-size: 18px;
+}
+
+.spanStyler{
+    position: absolute;
+    top: 65%;
+    left: 10px;
+}
+.spanStyler{
+    color: #ec7b07;
+}
+
+.disabled{
+    filter: brightness(30%);
+}
+
+.disabled swiper-slide{
+    width: 70%;
+    border: 2px solid white;
+    border-radius: 15px;
+}
+
+.quadradoLaranja {
+    position: absolute;
+    top: 20%; 
+    left: 15%; 
+    width: 20%; 
+    height: 40%; 
+    background-color: orange; 
+  }
+
+  
+swiper-slide {  
+    display: flex;
+    position: relative;
+  
+    flex-direction: column;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+  
+    width: 100%;
+    height: 100%;
+  
+    font-size: 15px;
+  
+    text-align: center;
+    box-sizing: border-box;
+}
+  
+swiper-slide img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+}
