@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
+import { PageBody } from '../page-body.component';
 
 @Component({
   selector: 'app-header',

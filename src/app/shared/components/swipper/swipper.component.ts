@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { CUSTOM_ELEMENTS_SCHEMA, Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 @Component({
@@ -15,7 +16,8 @@ import { IonicModule } from '@ionic/angular';
 })
 export class SwipperComponent  implements OnInit {
   content: any[] = []
-  constructor() { }
+  constructor(private router: Router){}
+
 
   ngOnInit() {
     this.content = [
@@ -27,9 +29,16 @@ export class SwipperComponent  implements OnInit {
         img:"../../../../assets/fotoAcademia2.jpg",
         text:"Yoga Express"
       }
-  
     ]
   }
-
+  gotoWorkout(){
+    this.router.navigate(['/pageWorkout'])
+  }
+  gotoYoga(){
+    this.router.navigate(['/pageYoga'])
+  }
+  gotoProtocol(){
+    this.router.navigate(['/pageProtocol'])
+  }
 
 }

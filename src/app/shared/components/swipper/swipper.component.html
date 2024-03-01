@@ -2,14 +2,14 @@
   <div style="display: flex; align-items: center;">
     <strong>PERSONAL ONLINE</strong>
     <ion-buttons >
-      <ion-button style="font-size: 8px;padding: 2px 4px;" slot="icon-only"fill="outline" >  
+      <ion-button style="font-size: 8px;padding: 2px 4px;" slot="icon-only"fill="outline" (click)="gotoWorkout()">  
         <ion-icon name="add" ></ion-icon>
       </ion-button>
     </ion-buttons>
   </div>
   <div class="swipper">
     <swiper-container [slidesPerView]="1.3">
-      <swiper-slide>
+      <swiper-slide (click)="gotoWorkout()">
         <img style="filter: brightness(15%)" src="../../../../assets/fotoAcademia1.jpg"/>
         <div class="textImg">
           <div class="iconAndText">
@@ -19,7 +19,7 @@
         </div>
       </swiper-slide>
   
-      <swiper-slide>
+      <swiper-slide (click)="gotoYoga()">
         <img src="../../../../assets/fotoAcademia2.jpg"/>
         <div class="textImg2">
           <h4>YOGA EXPRESS</h4>
@@ -33,7 +33,7 @@
 
     </div>
     <swiper-container [slidesPerView]="1.3">
-      <swiper-slide>
+      <swiper-slide (click)="gotoProtocol()">
         <img src="../../../../assets/fotoAcademia1.jpg"/>
         <div class="spanStyler">
           <span>Continuar treinando</span>
@@ -43,7 +43,7 @@
         </div>
       </swiper-slide>
   
-      <swiper-slide>
+      <swiper-slide (click)="gotoYoga()">
         <img src="../../../../assets/fotoAcademia2.jpg"/>
         <div class="textImg2">
           <h4>YOGA EXPRESS</h4>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -6,6 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  constructor(private router: Router){}
 
   notifications = [
     {
@@ -48,7 +50,14 @@ export class HomePage {
   setOpen(isOpen: boolean) {
     this.isModalOpen = isOpen;
     this.isNotifficationsOpen = true;
+  }
 
+  goToBody(){
+    this.router.navigate(['/pageBody'])
+  }
+
+  goToGoals(){
+    this.router.navigate(['/pageGoals'])
   }
 
 }
